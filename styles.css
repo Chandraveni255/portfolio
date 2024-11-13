@@ -1,0 +1,183 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0c2ff, #ffeb3b);
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #ff69b4;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style-type: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #ffeb3b;
+}
+
+/* Home section */
+.home {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home p {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* About section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffeb3b;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Projects section */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0c2ff;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #ff69b4;
+    font-size: 1.5em;
+}
+
+.project-card p {
+    color: #333;
+}
+
+/* Contact section */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ff69b4;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ff69b4;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Scroll to Top button */
+button {
+    display: block;
+    margin: 20px auto;
+}
